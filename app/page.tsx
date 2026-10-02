@@ -7,8 +7,8 @@ export default function Home() {
         {name:"zawodowy", link:"https://drive.google.com/file/d/1JJtQaCNUCXTXKbYf0E3RLvRwoX8z0cld/view?usp=sharing"}
     ];
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="grid bg-white gap-2 dark:bg-black">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans bg-black">
+      <main className="grid gap-2 bg-black">
           {links.map((link,key) => (
               <Link href={link.link} key={key} className={"hover:underline"}>{link.name}</Link>
           ))}
